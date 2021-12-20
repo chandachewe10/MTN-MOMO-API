@@ -12,6 +12,8 @@ curl_setopt_array($PaymentRequestUUID, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_USERAGENT=>'Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion',
   CURLOPT_CUSTOMREQUEST => 'GET',
+  CURLOPT_SSL_VERIFYPEER => FALSE,
+  CURLOPT_SSL_VERIFYHOST => FALSE,
 ));
 
 $UUIDPayment = curl_exec($PaymentRequestUUID);

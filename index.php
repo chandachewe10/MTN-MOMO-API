@@ -42,6 +42,8 @@ curl_setopt_array($apiUser, array(
     'Ocp-Apim-Subscription-Key: '.$subscriptionKey,
     'Content-Type: application/json'
   ),
+  CURLOPT_SSL_VERIFYPEER => FALSE,
+  CURLOPT_SSL_VERIFYHOST => FALSE,
 ));
 
 $response = curl_exec($apiUser);
@@ -70,6 +72,8 @@ curl_setopt_array($curl, array(
     'Ocp-Apim-Subscription-Key:'.$subscriptionKey,
     'Content-Length:0',
   ),
+  CURLOPT_SSL_VERIFYPEER => FALSE,
+  CURLOPT_SSL_VERIFYHOST => FALSE,
 ));
 
 $API = curl_exec($curl);
@@ -107,9 +111,9 @@ curl_setopt_array($Token, array(
     'Ocp-Apim-Subscription-Key: '.$subscriptionKey,
     'Content-Length:0',
     'Authorization: Basic ' . base64_encode($xReferenceId . ':' .$password)
-    
-    
   ),
+  CURLOPT_SSL_VERIFYPEER => FALSE,
+  CURLOPT_SSL_VERIFYHOST => FALSE,
 ));
 
 $BearerToken = substr(curl_exec($Token),1,-1);
@@ -161,6 +165,8 @@ curl_setopt_array($PaymentRequest, array(
     'X-Callback-Url:'.$XCallbackUrl,
     'Authorization: Bearer '.$TokenSanitized
   ),
+  CURLOPT_SSL_VERIFYPEER => FALSE,
+  CURLOPT_SSL_VERIFYHOST => FALSE,
 ));
 
 $response = curl_exec($PaymentRequest);
@@ -191,6 +197,8 @@ curl_setopt_array($PaymentStatus, array(
     'Ocp-Apim-Subscription-Key: '.$subscriptionKey,
     'Authorization: Bearer '.$TokenSanitized
   ),
+  CURLOPT_SSL_VERIFYPEER => FALSE,
+  CURLOPT_SSL_VERIFYHOST => FALSE,
 ));
 
 $response = curl_exec($PaymentStatus);
