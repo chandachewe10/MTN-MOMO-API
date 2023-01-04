@@ -1,4 +1,4 @@
-# MTN MOMO API FOR COLLECTING PAYMENTS FROM CUSTOMERS - cURL PHP
+## MTN MOMO API FOR COLLECTING PAYMENTS FROM CUSTOMERS - cURL PHP
 Mtn Money Developer API using cURL in PHP For Collections.
 
 Documentation and official resources can be found at MTN Developer Portal sandbox: https://momodeveloper.mtn.com/
