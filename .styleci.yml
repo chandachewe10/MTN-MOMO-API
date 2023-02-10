@@ -1,0 +1,16 @@
+risky: false
+
+version: 8.0
+
+preset: recommended
+
+tab-width: 4
+
+finder:
+  exclude:
+    - "Assets"
+  name:
+    - "*.php"
+  not-name:
+    - "*README.md"
+  
