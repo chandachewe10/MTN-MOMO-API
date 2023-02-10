@@ -9,6 +9,8 @@ require 'xReferenceID2.php';
 // SET CREDENTIALS
 
 //X-reference-ID generated automatically
+$xReferenceId=$UUID;
+$xReferenceId=$UUID;
 $xReferenceId=$UUID; 
 
 //Subscription Key from MTN MoMo Sandbox
