@@ -1,0 +1,18 @@
+risky: false
+
+version: 8.0
+
+preset: recommended
+
+tab-width: 4
+
+finder:
+  exclude:
+    - "composer"
+    - "vendor"
+  name:
+    - "*.php"
+  not-name:
+    - "composer.json"
+    - "composer.lock"
+    - "README.md"
