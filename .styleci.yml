@@ -8,11 +8,8 @@ tab-width: 4
 
 finder:
   exclude:
-    - "composer"
-    - "vendor"
+    - "Assets"   
   name:
     - "*.php"
   not-name:
-    - "composer.json"
-    - "composer.lock"
-    - "README.md"
+      - "README.md"
