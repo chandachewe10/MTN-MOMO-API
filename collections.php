@@ -2,12 +2,11 @@
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
 
-//Require XreferenceId for collections and making api user
+//Require X - referenceId for collections and making api user
 require 'xReferenceID1.php';
 require 'xReferenceID2.php';
 
 // SET CREDENTIALS
-
 //X-reference-ID generated automatically
 $xReferenceId=$UUID;
 $xReferenceId=$UUID;
